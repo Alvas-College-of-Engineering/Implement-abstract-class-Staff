@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>HospitalManagementSystem</display-name>
+
+    <servlet>
+        <servlet-name>AddDoctorServlet</servlet-name>
+        <servlet-class>com.hospital.servlet.AddDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDoctorServlet</servlet-name>
+        <url-pattern>/addDoctor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddNurseServlet</servlet-name>
+        <servlet-class>com.hospital.servlet.AddNurseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNurseServlet</servlet-name>
+        <url-pattern>/addNurse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayStaffServlet</servlet-name>
+        <servlet-class>com.hospital.servlet.DisplayStaffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayStaffServlet</servlet-name>
+        <url-pattern>/displayStaff</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchStaffServlet</servlet-name>
+        <servlet-class>com.hospital.servlet.SearchStaffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchStaffServlet</servlet-name>
+        <url-pattern>/searchStaff</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
